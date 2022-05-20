@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Agenda</title>
+<link rel="stylesheet" href="estilos.css">
+<script src="RCam.js"></script>
+    </head>
+    <body>
+    <table style="width: 80%;height: 80%;">
+        <caption style="font-size: 20px; font-weight: 600;">Días y horarios correspondientes a cada grupo</caption>
+    
+        <tr>
+            <th>Días/Horario</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sabado</th>
+        </tr>
+        <tr>
+            <td style="color: white;">8:00</td>
+            <td style="background-color: greenyellow;">Grupo CES</td>
+            <td></td>
+            <td style="background-color: greenyellow;">Grupo CES</td>
+            <td></td>
+            <td style="background-color: greenyellow;">Grupo CES</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="color: white;">10:00</td>
+            <td style="background-color: goldenrod;">Personalizados</td>
+            <td></td>
+            <td></td>
+            <td style="background-color: goldenrod;">Personalizados</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="color: white;">18:00</td>
+            <td style="background-color: pink;">Grupo R.Club</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="background-color: pink;">Grupo R.Club</td>
+            <td></td>
+        </tr>
+    </table>
+<p id="prueba">Probando scripts</p>
+
+<button type="button" onclick="cambiarTexto()">cambiar el texto con script</button>
+
+<button onclick="alert('esto es un window alert nardo')">apreta gato</button>
+
+<button onclick="window.print()">IMPRIMIR PAGINA</button>
+
+<p id="loquito">es importante aprender como chota funciona JS</p>
+<p id="loquito1">este ejemplo es para cambiar texto en un bloque de codigo</p>
+<button type="button" onclick="cambiarTexto1 ()">hace click boludo</button>
+
+<p id="Mati"></p>
+
+<script>
+    const pi = 3.14;
+    let name = "Mati";
+    let surname = "Maranga";
+document.getElementById("Mati").innerHTML = pi + "<br>" + name + "<br>" + surname;
+</script>
+</body>
+</html>
+
+<p id="MJM"></p>
+
+<script>
+    let x = 3 + 5;
+    let y = x + 2;
+
+    document.getElementById("MJM").innerHTML = y + x;
+</script>
