@@ -1,42 +1,4 @@
-
-/* INDEX2 **************************************************************/
-
-input {
-  padding: 5px 7px;
-  box-sizing: border-box;
-  margin: 4px 0;
-  border: 1px solid blue;
-  border-top-style: hidden;
-  border-left-style: hidden;
-  border-right-style: hidden;
-
-  color: darkblue;
-  background-color: antiquewhite;
-  font-style: italic;
-  font-weight: bold;
-}
-output {
-  border: 2px solid green;
-  background-color: antiquewhite;
-}
-label {
-  color: black;
-  padding: 3px;
-  font-family: arial;
-  font-weight: bold;
-}
-form {
-  background-color: white;
-  position: static;
-  border: 1px solid black;
-  width: 50%;
-}
-.bodyindex2 {
-  background: rgb(41, 165, 248);
-}
-
 .parrafoindex2 {
-  color: white;
   font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100;
