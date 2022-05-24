@@ -70,7 +70,6 @@ nav {
             margin-top: 5px;
 
                 a {
-            display: none;
             padding: 5px;
             }
             
@@ -80,9 +79,6 @@ nav {
                 transition: 1s;
             }
         
-            }
-            &:hover a {
-                display: flex;
             }
         }
     }
