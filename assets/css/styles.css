@@ -40,6 +40,12 @@
   }
   to {
     opacity: 1;
+    -webkit-box-shadow: -20px -20px 4px 4px rgba(145, 216, 240, 0.76), 20px 20px 4px 4px rgba(145, 216, 240, 0.76), 20px -20px 4px 4px rgba(241, 255, 5, 0.812763), -20px 20px 4px 4px rgba(241, 255, 5, 0.812763);
+            box-shadow: -20px -20px 4px 4px rgba(145, 216, 240, 0.76), 20px 20px 4px 4px rgba(145, 216, 240, 0.76), 20px -20px 4px 4px rgba(241, 255, 5, 0.812763), -20px 20px 4px 4px rgba(241, 255, 5, 0.812763);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition: 1s;
+    transition: 1s;
   }
 }
 
@@ -49,16 +55,21 @@
   }
   to {
     opacity: 1;
+    -webkit-box-shadow: -20px -20px 4px 4px rgba(145, 216, 240, 0.76), 20px 20px 4px 4px rgba(145, 216, 240, 0.76), 20px -20px 4px 4px rgba(241, 255, 5, 0.812763), -20px 20px 4px 4px rgba(241, 255, 5, 0.812763);
+            box-shadow: -20px -20px 4px 4px rgba(145, 216, 240, 0.76), 20px 20px 4px 4px rgba(145, 216, 240, 0.76), 20px -20px 4px 4px rgba(241, 255, 5, 0.812763), -20px 20px 4px 4px rgba(241, 255, 5, 0.812763);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition: 1s;
+    transition: 1s;
   }
 }
 
 .alturaDivLogo a img:hover {
   -webkit-animation: none;
           animation: none;
-  -webkit-box-shadow: -20px -20px 4px 4px rgba(145, 216, 240, 0.76), 20px 20px 4px 4px rgba(145, 216, 240, 0.76), 20px -20px 4px 4px rgba(241, 255, 5, 0.812763), -20px 20px 4px 4px rgba(241, 255, 5, 0.812763);
-          box-shadow: -20px -20px 4px 4px rgba(145, 216, 240, 0.76), 20px 20px 4px 4px rgba(145, 216, 240, 0.76), 20px -20px 4px 4px rgba(241, 255, 5, 0.812763), -20px 20px 4px 4px rgba(241, 255, 5, 0.812763);
-  -webkit-transition: 1s;
-  transition: 1s;
+  background-color: rgba(101, 201, 235, 0.699);
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 nav {
@@ -94,7 +105,6 @@ nav ul .drop div {
 }
 
 nav ul .drop div a {
-  display: none;
   padding: 5px;
 }
 
@@ -104,12 +114,6 @@ nav ul .drop div .dropdowna:hover {
           box-shadow: inset 12px 12px 40px white;
   -webkit-transition: 1s;
   transition: 1s;
-}
-
-nav ul .drop:hover a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 h1 {
