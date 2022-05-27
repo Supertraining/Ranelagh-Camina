@@ -16,7 +16,9 @@ Body {
 }
 
 .alturaDivLogo {
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(241, 255, 5, 0.812763) 100%);
 }
 
@@ -35,6 +37,25 @@ Body {
   -webkit-transition: 1s;
   transition: 1s;
   background-color: white;
+  margin: 40px 0px 40px 0px;
+}
+
+@media (max-width: 1200px) {
+  .alturaDivLogo a img {
+    margin: 30px 0px 30px 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .alturaDivLogo a img {
+    margin: 15px 0px 15px 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .alturaDivLogo a img {
+    margin: 10px 0px 10px 0px;
+  }
 }
 
 @-webkit-keyframes instalight {
@@ -69,6 +90,33 @@ Body {
   border: 10px solid rgba(101, 201, 235, 0.699);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media (max-width: 576px) {
+  @-webkit-keyframes instalight {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+      -webkit-box-shadow: 0;
+              box-shadow: 0;
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes instalight {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+      -webkit-box-shadow: 0;
+              box-shadow: 0;
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
 }
 
 nav {
@@ -124,6 +172,14 @@ nav ul li a:hover {
 
 .showSidebar {
   display: inline-block !important;
+}
+
+@media (max-width: 576px) {
+  .indexMainResponsive {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
+  }
 }
 
 h1 {
@@ -238,8 +294,8 @@ h1 p {
     -webkit-text-stroke: 0.5px white;
   }
   100% {
-    -webkit-transform: translatex(-300px);
-            transform: translatex(-300px);
+    -webkit-transform: translatex(300px);
+            transform: translatex(300px);
     color: #29a5f8;
   }
 }
@@ -254,8 +310,8 @@ h1 p {
     -webkit-text-stroke: 0.5px white;
   }
   100% {
-    -webkit-transform: translatex(-300px);
-            transform: translatex(-300px);
+    -webkit-transform: translatex(300px);
+            transform: translatex(300px);
     color: #29a5f8;
   }
 }
@@ -299,6 +355,12 @@ h1 p {
 @media (max-width: 900px) {
   h1 p {
     font-size: 5rem;
+  }
+}
+
+@media (max-width: 430px) {
+  h1 p {
+    font-size: 4rem;
   }
 }
 
