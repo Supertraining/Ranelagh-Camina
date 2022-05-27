@@ -75,6 +75,16 @@ nav {
   height: 150px;
 }
 
+nav button {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(101, 201, 235, 0.699);
+}
+
+nav button .fa-solid {
+  font-size: 50px;
+}
+
 nav ul {
   list-style: none;
   background-color: rgba(101, 201, 235, 0.699);
@@ -100,12 +110,28 @@ nav ul li a:hover {
   transition: 3s;
 }
 
+@media (max-width: 768px) {
+  .hideSidebar {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hideButton {
+    display: none;
+  }
+}
+
+.showSidebar {
+  display: inline-block !important;
+}
+
 h1 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   color: transparent;
-  font-size: 14rem;
+  font-size: 12rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   opacity: 1;
   -webkit-animation-name: h1flash;
@@ -114,6 +140,18 @@ h1 {
           animation-duration: 8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 6rem;
+  }
 }
 
 @-webkit-keyframes h1flash {
@@ -168,7 +206,7 @@ h1:hover {
 }
 
 h1 p {
-  font-size: 9rem;
+  font-size: 8rem;
   font-family: "Inspiration", cursive;
   font-style: italic;
   color: transparent;
@@ -200,8 +238,8 @@ h1 p {
     -webkit-text-stroke: 0.5px white;
   }
   100% {
-    -webkit-transform: translatex(400px);
-            transform: translatex(400px);
+    -webkit-transform: translatex(-300px);
+            transform: translatex(-300px);
     color: #29a5f8;
   }
 }
@@ -216,9 +254,51 @@ h1 p {
     -webkit-text-stroke: 0.5px white;
   }
   100% {
-    -webkit-transform: translatex(400px);
-            transform: translatex(400px);
+    -webkit-transform: translatex(-300px);
+            transform: translatex(-300px);
     color: #29a5f8;
+  }
+}
+
+@media (max-width: 1200px) {
+  h1 p {
+    font-size: 7rem;
+  }
+  @-webkit-keyframes slideLeft {
+    0% {
+      -webkit-transform: translate();
+              transform: translate();
+    }
+    50% {
+      color: transparent;
+      -webkit-text-stroke: 0.5px white;
+    }
+    100% {
+      -webkit-transform: translatex();
+              transform: translatex();
+      color: #29a5f8;
+    }
+  }
+  @keyframes slideLeft {
+    0% {
+      -webkit-transform: translate();
+              transform: translate();
+    }
+    50% {
+      color: transparent;
+      -webkit-text-stroke: 0.5px white;
+    }
+    100% {
+      -webkit-transform: translatex();
+              transform: translatex();
+      color: #29a5f8;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  h1 p {
+    font-size: 5rem;
   }
 }
 
