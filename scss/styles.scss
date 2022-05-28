@@ -9,6 +9,7 @@ Body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    height: 550px;
 }
 
 .alturaDivLogo {
@@ -137,6 +138,9 @@ h1 {
     }
     @media (max-width:900px) {
         font-size: 6rem;
+    }
+    @media (max-width:355px) {
+        font-size: 5rem;
     }
 
     @keyframes h1flash {
