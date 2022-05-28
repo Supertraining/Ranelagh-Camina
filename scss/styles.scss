@@ -3,13 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Smooch+Sans:wght@300;400&display=swap');
 
-
+html {
+    height: 100%;
+}
 Body {
     background-image: url("https://i.pinimg.com/originals/ba/35/5c/ba355ccfd611730eabebb62762511d49.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 550px;
+    min-height: 100%;
 }
 
 .alturaDivLogo {
