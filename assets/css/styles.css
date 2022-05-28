@@ -8,12 +8,16 @@
   font-size: 10px;
 }
 
+html {
+  height: 100%;
+}
+
 Body {
   background-image: url("https://i.pinimg.com/originals/ba/35/5c/ba355ccfd611730eabebb62762511d49.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 550px;
+  min-height: 100%;
 }
 
 .alturaDivLogo {
@@ -365,9 +369,39 @@ h1 p {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) {
   h1 p {
     font-size: 4rem;
+  }
+  @-webkit-keyframes slideLeft {
+    0% {
+      -webkit-transform: translate();
+              transform: translate();
+    }
+    50% {
+      color: transparent;
+      -webkit-text-stroke: 0.5px white;
+    }
+    100% {
+      -webkit-transform: translatex();
+              transform: translatex();
+      color: #9ce4f7;
+    }
+  }
+  @keyframes slideLeft {
+    0% {
+      -webkit-transform: translate();
+              transform: translate();
+    }
+    50% {
+      color: transparent;
+      -webkit-text-stroke: 0.5px white;
+    }
+    100% {
+      -webkit-transform: translatex();
+              transform: translatex();
+      color: #9ce4f7;
+    }
   }
 }
 

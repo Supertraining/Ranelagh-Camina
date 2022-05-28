@@ -207,10 +207,19 @@ h1 {
         @media (max-width: 900px) {
             font-size: 5rem;
         }
-        @media (max-width: 430px) {
+        @media (max-width: 500px) {
             font-size: 4rem;
-        }
+            @keyframes slideLeft {
+                0% {transform: translate();}
+                50% {color: transparent;
+                    -webkit-text-stroke: 0.5px white;}
+                100% {transform: translatex();
+                    color: rgb(156, 228, 247);}
+            }
+        }   
+   
     }
+
 }
 
 
