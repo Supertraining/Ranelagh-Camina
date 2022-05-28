@@ -208,13 +208,14 @@ h1 {
             font-size: 5rem;
         }
         @media (max-width: 500px) {
-            font-size: 4rem;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 3rem;
             @keyframes slideLeft {
                 0% {transform: translate();}
                 50% {color: transparent;
                     -webkit-text-stroke: 0.5px white;}
                 100% {transform: translatex();
-                    color: rgb(156, 228, 247);}
+                    color: rgb(118, 196, 248);}
             }
         }   
    

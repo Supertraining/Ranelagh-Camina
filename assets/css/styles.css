@@ -371,7 +371,8 @@ h1 p {
 
 @media (max-width: 500px) {
   h1 p {
-    font-size: 4rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 3rem;
   }
   @-webkit-keyframes slideLeft {
     0% {
@@ -385,7 +386,7 @@ h1 p {
     100% {
       -webkit-transform: translatex();
               transform: translatex();
-      color: #9ce4f7;
+      color: #76c4f8;
     }
   }
   @keyframes slideLeft {
@@ -400,7 +401,7 @@ h1 p {
     100% {
       -webkit-transform: translatex();
               transform: translatex();
-      color: #9ce4f7;
+      color: #76c4f8;
     }
   }
 }
